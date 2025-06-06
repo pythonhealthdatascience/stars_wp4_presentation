@@ -1,0 +1,112 @@
+---
+format: 
+  revealjs:
+    theme: ["styles2.scss"]
+    footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
+    height: 800
+    width: 1250
+---
+
+# Update on WP4: Training materials
+
+<hr>
+
+:::: {.columns}
+::: {.column width="75%"}
+<br>
+<h3>Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORCID record"><img src="images/orcid.png" alt="ORCID iD" style="width:32px; margin-left:15px; margin-right:6px; vertical-align:middle;"></a>0000-0002-6596-3479</h3>
+<br>
+<br>
+Part of the "STARS" project:
+:::
+
+::: {.column width="25%"}
+![](images/exeter.png)
+:::
+::::
+
+![](images/stars_banner.png)
+
+## Stages for developing the training materials
+
+:::: {.r-vstack}
+::: {.stage-box .evidence}
+Gather evidence on requirements for reproducible DES
+:::
+
+::: {.stage-box .example}
+From theory to practice: build working examples
+:::
+
+::: {.stage-box .stroke}
+Testing with a real-world stroke model
+:::
+
+::: {.stage-box .book}
+Knowledge mobilisation: online book
+:::
+::::
+
+## Gather evidence on requirements for reproducible DES
+
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+
+:::: {.columns}
+::: {.column width='50%'}
+![](images/reproduction_wheel.png)
+:::
+::: {.column width='50%'}
+![](images/troubleshooting_wheel.png)
+:::
+::::
+
+## Gather evidence on requirements for reproducible DES
+
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
+
+![](images/nhs_levels_of_rap.png){fig-align="center"}
+
+## Gather evidence on requirements for reproducible DES
+
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
+
+These serve different purposes. Distinction between **reproducibility** and a RAP:
+
+![](images/reproduce.png){fig-align="center"}
+
+## Gather evidence on requirements for reproducible DES
+
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
+
+These serve different purposes. Distinction between reproducibility and **a RAP**:
+
+![](images/rap.png){fig-align="center"}
+
+## Gather evidence on requirements for reproducible DES
+
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
+* **Established DES modeling practices** - All the necessary stages of creation of a DES model were identified from domain expertise and textbook recommendations.
+    * **Why?** The RAP should include all the analysis stages of a typical DES modelling process.
+
+## From theory to practice: building working examples
+
+Developed simple M/M/s examples in Python and R that meet all requirements we identified.
+
+## Testing with a real-world stroke model
+
+Applied out templates to a stroke pathway model described in a published paper. This was important for:
+
+* Testing on a more complex example.
+* Refining the template.
+* Providing a practical demonstration.
+
+## Knowledge mobilisation: online book
+
+For modellers trying to develop reproducible DES, the M/M/s and stroke models are valuable in providing fully formed examples. However, these were developed iteratively, and so it is important to support modellers in how they could work step-by-step to build these models on their own. Therefore, created an online book which explains the requirements and walks through how to implement them. This is helpful for:
+
+* Step-by-step building models iterativey developing reproducibility practices alongside modelling skills
+* Easier to dip in for people looking for guidance on specific requirements

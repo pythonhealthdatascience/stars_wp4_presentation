@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+$backgroundColor: #F0F8FF;
+$mainFont: 'Jost', sans-serif;
+$mainFontSize: 30px;
+$headingColor: #002147;
+$mainColor: #002147;
+
+/*-- scss:rules --*/
+.stage-box {
+  padding: 1.5rem 2rem;
+  margin: 0.75rem 0;
+  border: 2px solid #d1d5db;
+  text-align: left;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 2px solid #d1d5db; /* Subtle shadow effect */
+
+  /* Custom box colours */
+  &.evidence {
+    background-color: #e8f5e8;
+  }
+  &.example {
+    background-color: #fef3e8;
+  }
+  &.stroke {
+    background-color: #f0ebf8;
+  }
+  &.book {
+    background-color: #fdeaea;
+  }
+}
