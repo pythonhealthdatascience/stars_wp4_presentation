@@ -96,7 +96,7 @@ These serve different purposes. Distinction between reproducibility and **a RAP*
 
 {{< include html/example.md >}}
 
-Developed simple M/M/s examples in Python and R that meet all requirements we identified.
+Developed simple M/M/s examples as templates in Python and R that meet all requirements we identified.
 
 ::: {.scroll-container style="overflow-y: scroll; height: 700px;"}
 <p align="center">
@@ -104,9 +104,29 @@ Developed simple M/M/s examples in Python and R that meet all requirements we id
 </p>
 :::
 
+{{< include html/example.md >}}
+
+Developed simple M/M/s examples as templates in Python (**SimPy**) and R (**simmer**) that meet all requirements we identified.
+
+* Meets all requirements (from Heather et al. (2025) and NHS Levels of RAP) - for example:
+  * Structured as a package.
+  * Unit tests, back tests and functional tests.
+
+. . .
+
+* Complementary structure between Python and R models.
+
+. . .
+
+* Python mostly classes, R mostly functions (as is typical for each language).
+
+. . .
+
+* Provides code for simulation with scenarios and sensitivity analysis as well as choice of model parameters (input modelling, warm-up length, number of replications).
+
 {{< include html/stroke.md >}}
 
-Applied out templates to a stroke pathway model described in a published paper. This provided a **real**, more **complex** example and helped **refine** the template.
+Applied the templates to a stroke pathway model described in a published paper. This provided a **real**, more **complex** example and helped **refine** the template.
 
 ::: {.scroll-container style="overflow-y: scroll; height: 700px;"}
 <p align="center">
