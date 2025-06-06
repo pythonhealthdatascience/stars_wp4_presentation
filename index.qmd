@@ -1,14 +1,9 @@
 ---
 format: 
   revealjs:
+    auto-animate: true
     theme: ["styles.scss"]
     footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
-    preview-links: true
-    height: 800
-    width: 1250
-    preload-iframes: true
-    controls: true
-    controls-layout: bottom-right
 ---
 
 # Update on WP4: Training materials
@@ -33,28 +28,62 @@ Part of the "STARS" project:
 
 ![](images/stars_banner.png)
 
-## Stages for developing the training materials {auto-animate=true}
+## Stages for developing the training materials
 
 :::: {.r-vstack}
 ::: {.stage-box .green}
+<div id="icon-evidence" class="stage-icon green"></div>
 Gather evidence on requirements for reproducible DES
 :::
 
 ::: {.stage-box .orange}
+<div id="icon-practice" class="stage-icon orange"></div>
 From theory to practice: build working examples
 :::
 
 ::: {.stage-box .purple}
+<div id="icon-testing" class="stage-icon purple"></div>
 Testing with a real-world stroke model
 :::
 
 ::: {.stage-box .red}
+<div id="icon-knowledge" class="stage-icon red"></div>
 Knowledge mobilisation: online book
 :::
 ::::
 
-## {auto-animate=true}
+## Gather evidence on requirements for reproducible DES
 
-def
+<div class="page-indicators">
+  <div class="page-indicator green active"></div>
+  <div class="page-indicator orange"></div>
+  <div class="page-indicator purple"></div>
+  <div class="page-indicator red"></div>
+</div>
 
-abc
+## From theory to practice: building working examples
+
+<div class="page-indicators">
+  <div class="page-indicator green"></div>
+  <div class="page-indicator orange active"></div>
+  <div class="page-indicator purple"></div>
+  <div class="page-indicator red"></div>
+</div>
+
+## Testing with a real-world stroke model
+
+<div class="page-indicators">
+  <div class="page-indicator green"></div>
+  <div class="page-indicator orange"></div>
+  <div class="page-indicator purple active"></div>
+  <div class="page-indicator red"></div>
+</div>
+
+## Knowledge mobilisation: online book
+
+<div class="page-indicators">
+  <div class="page-indicator green"></div>
+  <div class="page-indicator orange"></div>
+  <div class="page-indicator purple"></div>
+  <div class="page-indicator red active"></div>
+</div>

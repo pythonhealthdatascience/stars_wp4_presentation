@@ -1,23 +1,67 @@
 /*-- scss:defaults --*/
-
-// Background of the presentation
 $backgroundColor: #F0F8FF;
-
-// Text
 $mainFont: 'Jost', sans-serif;
 $mainFontSize: 30px;
 $headingColor: #002147;
 $mainColor: #002147;
 
-// Define more professional, paler color variables
 $stage-box-green: #e8f5e8;
 $stage-box-orange: #fef3e8;
 $stage-box-purple: #f0ebf8;
 $stage-box-red: #fdeaea;
 
 /*-- scss:rules --*/
+.page-indicators {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 100;
+}
+
+.page-indicator {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+  transform: scale(0.8);
+  color: white;
+  
+  &.active {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  &.green {
+    background-color: #10b981;
+    &::before { content: '🔍'; }
+  }
+  
+  &.orange {
+    background-color: #f59e0b;
+    &::before { content: '✓'; }
+  }
+  
+  &.purple {
+    background-color: #8b5cf6;
+    &::before { content: '🧠'; }
+  }
+  
+  &.red {
+    background-color: #ef4444;
+    &::before { content: '📖'; }
+  }
+}
+
 .stage-box {
-  // Base styling for all stage boxes with consistent width
   padding: 1.5rem 2rem;
   margin: 0.75rem 0;
   border-radius: 12px;
@@ -25,23 +69,21 @@ $stage-box-red: #fdeaea;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  text-align: left; // Changed to left for icon alignment
+  text-align: left;
   font-weight: 500;
   color: #1f2937;
   width: 80%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   
-  // Subtle hover effect
   &:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     border-color: #9ca3af;
   }
   
-  // Icon styling
   &::before {
     content: '';
     width: 3.5rem;
@@ -51,62 +93,53 @@ $stage-box-red: #fdeaea;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-  }
-}
-
-// Professional pale color variants with icons
-.stage-box.green {
-  background-color: $stage-box-green;
-  border-left: 4px solid #10b981;
-  
-  &::before {
-    content: '🔍';
-    background-color: #10b981;
     color: white;
   }
-}
-
-.stage-box.orange {
-  background-color: $stage-box-orange;
-  border-left: 4px solid #f59e0b;
   
-  &::before {
-    content: '✓';
-    background-color: #f59e0b;
-    color: white;
+  &.green {
+    background-color: $stage-box-green;
+    border-left: 4px solid #10b981;
+    &::before {
+      content: '🔍';
+      background-color: #10b981;
+    }
+  }
+  
+  &.orange {
+    background-color: $stage-box-orange;
+    border-left: 4px solid #f59e0b;
+    &::before {
+      content: '✓';
+      background-color: #f59e0b;
+    }
+  }
+  
+  &.purple {
+    background-color: $stage-box-purple;
+    border-left: 4px solid #8b5cf6;
+    &::before {
+      content: '🧠';
+      background-color: #8b5cf6;
+    }
+  }
+  
+  &.red {
+    background-color: $stage-box-red;
+    border-left: 4px solid #ef4444;
+    &::before {
+      content: '📖';
+      background-color: #ef4444;
+    }
   }
 }
 
-.stage-box.purple {
-  background-color: $stage-box-purple;
-  border-left: 4px solid #8b5cf6;
-  
-  &::before {
-    content: '🧠';
-    background-color: #8b5cf6;
-    color: white;
-  }
-}
-
-.stage-box.red {
-  background-color: $stage-box-red;
-  border-left: 4px solid #ef4444;
-  
-  &::before {
-    content: '📖';
-    background-color: #ef4444;
-    color: white;
-  }
-}
-
-// Ensure consistent container width
 .r-vstack {
   width: 100%;
-}
-
-.r-vstack > .stage-box {
-  flex: 1;
-  min-width: 0;
+  
+  > .stage-box {
+    flex: 1;
+    min-width: 0;
+  }
 }
