@@ -5,22 +5,73 @@ $mainFontSize: 30px;
 $headingColor: #002147;
 $mainColor: #002147;
 
-$stage-box-green: #e8f5e8;
-$stage-box-orange: #fef3e8;
-$stage-box-purple: #f0ebf8;
-$stage-box-red: #fdeaea;
-
 /*-- scss:rules --*/
 
-.page-indicators {
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
-  display: flex;
-  gap: 1rem;
-  z-index: 100;
+/* Boxes with the development stages */
+.stage-box {
+  /* Box design */
+  padding: 1.5rem 2rem;
+  margin: 0.75rem 0;
+  border: 2px solid #d1d5db;
+  text-align: left;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 2px solid #d1d5db; /* Subtle shadow effect */
+  display: flex; /* Enables text to be alongside icons */
+  gap: 1.5rem; /* Creates gap between text and icons */
+
+  /* Icons on left side of the box */
+  &::before {
+    content: '';
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Custom box colours and icons */
+  &.evidence {
+    background-color: #e8f5e8;
+    border-left: 4px solid #10b981;
+    &::before {
+      content: '🔍';
+      background-color: #10b981;
+    }
+  }
+  &.example {
+    background-color: #fef3e8;
+    border-left: 4px solid #f59e0b;
+    &::before {
+      content: '✓';
+      background-color: #f59e0b;
+    }
+  }
+  &.stroke {
+    background-color: #f0ebf8;
+    border-left: 4px solid #8b5cf6;
+    &::before {
+      content: '🧠';
+      background-color: #8b5cf6;
+    }
+  }
+  &.book {
+    background-color: #fdeaea;
+    border-left: 4px solid #ef4444;
+    &::before {
+      content: '📖';
+      background-color: #ef4444;
+    }
+  }
 }
 
+/* Page indicator icons */
 .page-indicator {
   width: 3rem;
   height: 3rem;
@@ -62,87 +113,14 @@ $stage-box-red: #fdeaea;
   }
 }
 
-.stage-box {
-  padding: 1.5rem 2rem;
-  margin: 0.75rem 0;
-  border-radius: 12px;
-  border: 2px solid #d1d5db;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  text-align: left;
-  font-weight: 500;
-  color: #1f2937;
-  width: 80%;
-  box-sizing: border-box;
+/* Positioning of the page indicator icons */
+.page-indicators {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  
-  &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    border-color: #9ca3af;
-  }
-  
-  &::before {
-    content: '';
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-  }
-  
-  &.green {
-    background-color: $stage-box-green;
-    border-left: 4px solid #10b981;
-    &::before {
-      content: '🔍';
-      background-color: #10b981;
-    }
-  }
-  
-  &.orange {
-    background-color: $stage-box-orange;
-    border-left: 4px solid #f59e0b;
-    &::before {
-      content: '✓';
-      background-color: #f59e0b;
-    }
-  }
-  
-  &.purple {
-    background-color: $stage-box-purple;
-    border-left: 4px solid #8b5cf6;
-    &::before {
-      content: '🧠';
-      background-color: #8b5cf6;
-    }
-  }
-  
-  &.red {
-    background-color: $stage-box-red;
-    border-left: 4px solid #ef4444;
-    &::before {
-      content: '📖';
-      background-color: #ef4444;
-    }
-  }
-}
-
-.r-vstack {
-  width: 100%;
-  
-  > .stage-box {
-    flex: 1;
-    min-width: 0;
-  }
+  gap: 1rem;
+  z-index: 100;
 }
 
 /* Fixed title position to right of indicators with smaller font */

@@ -1,18 +1,18 @@
 ---
 format: 
   revealjs:
-    theme: ["styles.scss"]
+    theme: ["styles2.scss"]
     footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
     height: 800
     width: 1250
+    preload-iframes: true
 ---
 
-# Update on WP4: Training materials {auto-animate=true auto-animate-unmatched=false}
+# Update on WP4: Training materials
 
 <hr>
 
 :::: {.columns}
-
 ::: {.column width="75%"}
 <br>
 <h3>Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORCID record"><img src="images/orcid.png" alt="ORCID iD" style="width:32px; margin-left:15px; margin-right:6px; vertical-align:middle;"></a>0000-0002-6596-3479</h3>
@@ -24,7 +24,6 @@ Part of the "STARS" project:
 ::: {.column width="25%"}
 ![](images/exeter.png)
 :::
-
 ::::
 
 ![](images/stars_banner.png)
@@ -32,75 +31,115 @@ Part of the "STARS" project:
 ## Stages for developing the training materials {auto-animate=true auto-animate-unmatched=false}
 
 :::: {.r-vstack}
-::: {.stage-box .green}
+::: {.stage-box .evidence}
 <div data-id="green" class="stage-icon green"></div>
 Gather evidence on requirements for reproducible DES
 :::
 
-::: {.stage-box .orange}
-<div data-id="orange" class="stage-icon orange"></div>
+::: {.stage-box .example}
 From theory to practice: build working examples
 :::
 
-::: {.stage-box .purple}
-<div data-id="purple" class="stage-icon purple"></div>
+::: {.stage-box .stroke}
 Testing with a real-world stroke model
 :::
 
-::: {.stage-box .red}
-<div data-id="red" class="stage-icon red"></div>
+::: {.stage-box .book}
 Knowledge mobilisation: online book
 :::
 ::::
 
-## {auto-animate=true}
+{{< include html/evidence.md >}}
 
-<div class="adj-title">
-  <h2>Gather evidence on requirements for reproducible DES</h2>
-</div>
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
 
-<div class="page-indicators">
-  <div data-id="green" class="page-indicator green active"></div>
-  <div data-id="orange" class="page-indicator orange"></div>
-  <div data-id="purple" class="page-indicator purple"></div>
-  <div data-id="red" class="page-indicator red"></div>
-</div>
+:::: {.columns}
+::: {.column width='50%'}
+![](images/reproduction_wheel.png)
+:::
+::: {.column width='50%'}
+![](images/troubleshooting_wheel.png)
+:::
+::::
 
-## {auto-animate=true}
+{{< include html/evidence.md >}}
 
-<div class="adj-title">
-  <h2>From theory to practice: building working examples</h2>
-</div>
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
 
-<div class="page-indicators">
-  <div data-id="green" class="page-indicator green"></div>
-  <div class="page-indicator orange active"></div>
-  <div class="page-indicator purple"></div>
-  <div class="page-indicator red"></div>
-</div>
+![](images/nhs_levels_of_rap.png){fig-align="center"}
 
-## {auto-animate=true}
+{{< include html/evidence.md >}}
 
-<div class="adj-title">
-  <h2>Testing with a real-world stroke model</h2>
-</div>
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
 
-<div class="page-indicators">
-  <div data-id="green" class="page-indicator green"></div>
-  <div class="page-indicator orange"></div>
-  <div class="page-indicator purple active"></div>
-  <div class="page-indicator red"></div>
-</div>
+These serve different purposes. Distinction between **reproducibility** and a RAP:
 
-## {auto-animate=true}
+![](images/reproduce.png){fig-align="center"}
 
-<div class="adj-title">
-  <h2>Knowledge mobilisation: online book</h2>
-</div>
+{{< include html/evidence.md >}}
 
-<div class="page-indicators">
-  <div data-id="green" class="page-indicator green"></div>
-  <div class="page-indicator orange"></div>
-  <div class="page-indicator purple"></div>
-  <div class="page-indicator red active"></div>
-</div>
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
+
+These serve different purposes. Distinction between reproducibility and **a RAP**:
+
+![](images/rap.png){fig-align="center"}
+
+{{< include html/evidence.md >}}
+
+* **Empirical research** - Barriers and facilitators identified from reproducing eight published healthcare DES models (Python/R).
+* **NHS RAP guidelines** - Established framework for developing reproducible analytical pipelines (RAP) in the NHS.
+* **Established DES modeling practices** - All the necessary stages of creation of a DES model were identified from domain expertise and textbook recommendations.
+    * **Why?** The RAP should include all the analysis stages of a typical DES modelling process.
+
+{{< include html/example.md >}}
+
+Developed simple M/M/s examples in Python and R that meet all requirements we identified.
+
+::: {.scroll-container style="overflow-y: scroll; height: 700px;"}
+<p align="center">
+  <img src="images/rap_template_r.png"/>
+</p>
+:::
+
+{{< include html/stroke.md >}}
+
+Applied out templates to a stroke pathway model described in a published paper. This provided a **real**, more **complex** example and helped **refine** the template.
+
+::: {.scroll-container style="overflow-y: scroll; height: 700px;"}
+<p align="center">
+  <img src="images/rap_stroke_python.png"/>
+</p>
+:::
+
+{{< include html/book.md >}}
+
+The M/M/s and stroke models demonstrate what reproducible DES looks like, they don't show modellers *how* to get there.
+
+I am developing an online book which breaks down these models, showing how they met each requirement. The book:
+
+* Provides **actionable steps** which guide modellers to create a model which meets all the reproducibility and RAP requirements.
+* Allows people to easily choose particular pages of interest (e.g. already have a model, but want to find out more about citation).
+
+{{< include html/book.md >}}
+
+<iframe class="stretch" data-src="https://pythonhealthdatascience.github.io/des_rap_book/"></iframe>
+
+{{< include html/future.md >}}
+
+<br>
+
+**Review:** At a good stage for review of some of these materials.
+
+* Tom has reviewed the M/M/s models.
+* Alison - review of R (mentioning before - timing better now?)
+* Nav - review of book, if happy to?
+* Andy & Chris - at a later stage?
+
+<br>
+
+**Plan:** Continuing to work on these materials. Will describe in a publication.
+
+<br>
