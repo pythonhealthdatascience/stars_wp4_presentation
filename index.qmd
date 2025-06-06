@@ -1,12 +1,13 @@
 ---
 format: 
   revealjs:
-    auto-animate: true
     theme: ["styles.scss"]
     footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
+    height: 800
+    width: 1250
 ---
 
-# Update on WP4: Training materials
+# Update on WP4: Training materials {auto-animate=true auto-animate-unmatched=false}
 
 <hr>
 
@@ -28,61 +29,77 @@ Part of the "STARS" project:
 
 ![](images/stars_banner.png)
 
-## Stages for developing the training materials
+## Stages for developing the training materials {auto-animate=true auto-animate-unmatched=false}
 
 :::: {.r-vstack}
 ::: {.stage-box .green}
-<div id="icon-evidence" class="stage-icon green"></div>
+<div data-id="green" class="stage-icon green"></div>
 Gather evidence on requirements for reproducible DES
 :::
 
 ::: {.stage-box .orange}
-<div id="icon-practice" class="stage-icon orange"></div>
+<div data-id="orange" class="stage-icon orange"></div>
 From theory to practice: build working examples
 :::
 
 ::: {.stage-box .purple}
-<div id="icon-testing" class="stage-icon purple"></div>
+<div data-id="purple" class="stage-icon purple"></div>
 Testing with a real-world stroke model
 :::
 
 ::: {.stage-box .red}
-<div id="icon-knowledge" class="stage-icon red"></div>
+<div data-id="red" class="stage-icon red"></div>
 Knowledge mobilisation: online book
 :::
 ::::
 
-## Gather evidence on requirements for reproducible DES
+## {auto-animate=true}
 
-<div class="page-indicators">
-  <div class="page-indicator green active"></div>
-  <div class="page-indicator orange"></div>
-  <div class="page-indicator purple"></div>
-  <div class="page-indicator red"></div>
+<div class="adj-title">
+  <h2>Gather evidence on requirements for reproducible DES</h2>
 </div>
 
-## From theory to practice: building working examples
+<div class="page-indicators">
+  <div data-id="green" class="page-indicator green active"></div>
+  <div data-id="orange" class="page-indicator orange"></div>
+  <div data-id="purple" class="page-indicator purple"></div>
+  <div data-id="red" class="page-indicator red"></div>
+</div>
+
+## {auto-animate=true}
+
+<div class="adj-title">
+  <h2>From theory to practice: building working examples</h2>
+</div>
 
 <div class="page-indicators">
-  <div class="page-indicator green"></div>
+  <div data-id="green" class="page-indicator green"></div>
   <div class="page-indicator orange active"></div>
   <div class="page-indicator purple"></div>
   <div class="page-indicator red"></div>
 </div>
 
-## Testing with a real-world stroke model
+## {auto-animate=true}
+
+<div class="adj-title">
+  <h2>Testing with a real-world stroke model</h2>
+</div>
 
 <div class="page-indicators">
-  <div class="page-indicator green"></div>
+  <div data-id="green" class="page-indicator green"></div>
   <div class="page-indicator orange"></div>
   <div class="page-indicator purple active"></div>
   <div class="page-indicator red"></div>
 </div>
 
-## Knowledge mobilisation: online book
+## {auto-animate=true}
+
+<div class="adj-title">
+  <h2>Knowledge mobilisation: online book</h2>
+</div>
 
 <div class="page-indicators">
-  <div class="page-indicator green"></div>
+  <div data-id="green" class="page-indicator green"></div>
   <div class="page-indicator orange"></div>
   <div class="page-indicator purple"></div>
   <div class="page-indicator red active"></div>

@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-8b44cdde8e20db4ee041fde0128a9f0e.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-121965616769f111d631102c337c0d15.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -127,8 +127,8 @@
 
 
 <section>
-<section id="update-on-wp4-training-materials" class="title-slide slide level1 center">
-<h1>Update on WP4: Training materials</h1>
+<section id="update-on-wp4-training-materials" class="title-slide slide level1 center" data-auto-animate="true" data-auto-animate-unmatched="false">
+<h1 data-id="quarto-animate-title">Update on WP4: Training materials</h1>
 <hr>
 <div class="columns">
 <div class="column" style="width:75%;">
@@ -142,27 +142,122 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
 </div></div>
 <p><img data-src="images/stars_banner.png"></p>
 </section>
-<section id="stages-for-developing-materials" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Stages for developing materials</h2>
+<section id="stages-for-developing-the-training-materials" class="slide level2" data-auto-animate="true" data-auto-animate-unmatched="false">
+<h2 data-id="quarto-animate-title">Stages for developing the training materials</h2>
 <div class="r-vstack">
 <div class="stage-box green">
+<div class="stage-icon green" data-id="green">
+
+</div>
 <p>Gather evidence on requirements for reproducible DES</p>
 </div>
 <div class="stage-box orange">
+<div class="stage-icon orange" data-id="orange">
+
+</div>
 <p>From theory to practice: build working examples</p>
 </div>
 <div class="stage-box purple">
+<div class="stage-icon purple" data-id="purple">
+
+</div>
 <p>Testing with a real-world stroke model</p>
 </div>
 <div class="stage-box red">
+<div class="stage-icon red" data-id="red">
+
+</div>
 <p>Knowledge mobilisation: online book</p>
 </div>
 </div>
 </section>
 <section id="section" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
-<p>def</p>
-<p>abc</p>
+<div class="adj-title">
+<h2>
+Gather evidence on requirements for reproducible DES
+</h2>
+</div>
+<div class="page-indicators">
+<div class="page-indicator green active" data-id="green">
+
+</div>
+<div class="page-indicator orange" data-id="orange">
+
+</div>
+<div class="page-indicator purple" data-id="purple">
+
+</div>
+<div class="page-indicator red" data-id="red">
+
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="adj-title">
+<h2>
+From theory to practice: building working examples
+</h2>
+</div>
+<div class="page-indicators">
+<div class="page-indicator green" data-id="green">
+
+</div>
+<div class="page-indicator orange active">
+
+</div>
+<div class="page-indicator purple">
+
+</div>
+<div class="page-indicator red">
+
+</div>
+</div>
+</section>
+<section id="section-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="adj-title">
+<h2>
+Testing with a real-world stroke model
+</h2>
+</div>
+<div class="page-indicators">
+<div class="page-indicator green" data-id="green">
+
+</div>
+<div class="page-indicator orange">
+
+</div>
+<div class="page-indicator purple active">
+
+</div>
+<div class="page-indicator red">
+
+</div>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div class="adj-title">
+<h2>
+Knowledge mobilisation: online book
+</h2>
+</div>
+<div class="page-indicators">
+<div class="page-indicator green" data-id="green">
+
+</div>
+<div class="page-indicator orange">
+
+</div>
+<div class="page-indicator purple">
+
+</div>
+<div class="page-indicator red active">
+
+</div>
+</div>
 
 </section></section>
     </div>
@@ -193,7 +288,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': false,
+'controlsAuto': true,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -204,14 +299,14 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
         controlsTutorial: false,
 
         // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'bottom-right',
+        controlsLayout: 'edges',
 
         // Visibility rule for backwards navigation arrows; "faded", "hidden"
         // or "visible"
@@ -292,7 +387,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
         autoPlayMedia: null,
 
         // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: true,
+        preloadIframes: null,
 
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
@@ -323,7 +418,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: true,
+        previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'none',

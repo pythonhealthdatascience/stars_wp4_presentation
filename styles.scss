@@ -11,6 +11,7 @@ $stage-box-purple: #f0ebf8;
 $stage-box-red: #fdeaea;
 
 /*-- scss:rules --*/
+
 .page-indicators {
   position: fixed;
   top: 2rem;
@@ -141,5 +142,17 @@ $stage-box-red: #fdeaea;
   > .stage-box {
     flex: 1;
     min-width: 0;
+  }
+}
+
+/* Fixed title position to right of indicators with smaller font */
+.adj-title {
+  position: fixed;
+  top: 2.3rem;
+  left: 19rem;
+  z-index: 99;
+
+  h2 {
+    font-size: 30px;
   }
 }
