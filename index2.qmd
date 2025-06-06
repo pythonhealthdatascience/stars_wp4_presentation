@@ -5,6 +5,11 @@ format:
     footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
     height: 800
     width: 1250
+    preload-iframes: true
+    controls: true
+    controls-layout: bottom-right
+    revealjs-plugins:
+     - fullscreen
 ---
 
 # Update on WP4: Training materials
@@ -96,17 +101,48 @@ These serve different purposes. Distinction between reproducibility and **a RAP*
 
 Developed simple M/M/s examples in Python and R that meet all requirements we identified.
 
+::: {.scroll-container style="overflow-y: scroll; height: 700px;"}
+<p align="center">
+  <img src="images/rap_template_r.png"/>
+</p>
+:::
+
 ## Testing with a real-world stroke model
 
-Applied out templates to a stroke pathway model described in a published paper. This was important for:
+Applied out templates to a stroke pathway model described in a published paper. This provided a **real**, more **complex** example and helped **refine** the template.
 
-* Testing on a more complex example.
-* Refining the template.
-* Providing a practical demonstration.
+::: {.scroll-container style="overflow-y: scroll; height: 700px;"}
+<p align="center">
+  <img src="images/rap_stroke_python.png"/>
+</p>
+:::
 
 ## Knowledge mobilisation: online book
 
-For modellers trying to develop reproducible DES, the M/M/s and stroke models are valuable in providing fully formed examples. However, these were developed iteratively, and so it is important to support modellers in how they could work step-by-step to build these models on their own. Therefore, created an online book which explains the requirements and walks through how to implement them. This is helpful for:
+The M/M/s and stroke models demonstrate what reproducible DES looks like, they don't show modellers *how* to get there.
 
-* Step-by-step building models iterativey developing reproducibility practices alongside modelling skills
-* Easier to dip in for people looking for guidance on specific requirements
+I am developing an online book which breaks down these models, showing how they met each requirement. The book:
+
+* Provides **actionable steps** which guide modellers to create a model which meets all the reproducibility and RAP requirements.
+* Allows people to easily choose particular pages of interest (e.g. already have a model, but want to find out more about citation).
+
+## {fullscreen=true}
+
+<iframe class="stretch" data-src="https://pythonhealthdatascience.github.io/des_rap_book/"></iframe>
+
+## Looking forwards
+
+<br>
+
+**Review:** At a good stage for review of some of these materials.
+
+* Tom has reviewed the M/M/s models.
+* Alison - review of R (mentioning before - timing better now?)
+* Nav - review of book, if happy to?
+* Andy & Chris - at a later stage?
+
+<br>
+
+**Plan:** Continuing to work on these materials. Will describe in a publication.
+
+<br>

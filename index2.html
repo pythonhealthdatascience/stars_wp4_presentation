@@ -211,23 +211,48 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
 <section id="from-theory-to-practice-building-working-examples" class="slide level2">
 <h2>From theory to practice: building working examples</h2>
 <p>Developed simple M/M/s examples in Python and R that meet all requirements we identified.</p>
+<div class="scroll-container" style="overflow-y: scroll; height: 700px;">
+<p align="center">
+<img src="images/rap_template_r.png">
+</p>
+</div>
 </section>
 <section id="testing-with-a-real-world-stroke-model" class="slide level2">
 <h2>Testing with a real-world stroke model</h2>
-<p>Applied out templates to a stroke pathway model described in a published paper. This was important for:</p>
-<ul>
-<li>Testing on a more complex example.</li>
-<li>Refining the template.</li>
-<li>Providing a practical demonstration.</li>
-</ul>
+<p>Applied out templates to a stroke pathway model described in a published paper. This provided a <strong>real</strong>, more <strong>complex</strong> example and helped <strong>refine</strong> the template.</p>
+<div class="scroll-container" style="overflow-y: scroll; height: 700px;">
+<p align="center">
+<img src="images/rap_stroke_python.png">
+</p>
+</div>
 </section>
 <section id="knowledge-mobilisation-online-book" class="slide level2">
 <h2>Knowledge mobilisation: online book</h2>
-<p>For modellers trying to develop reproducible DES, the M/M/s and stroke models are valuable in providing fully formed examples. However, these were developed iteratively, and so it is important to support modellers in how they could work step-by-step to build these models on their own. Therefore, created an online book which explains the requirements and walks through how to implement them. This is helpful for:</p>
+<p>The M/M/s and stroke models demonstrate what reproducible DES looks like, they don’t show modellers <em>how</em> to get there.</p>
+<p>I am developing an online book which breaks down these models, showing how they met each requirement. The book:</p>
 <ul>
-<li>Step-by-step building models iterativey developing reproducibility practices alongside modelling skills</li>
-<li>Easier to dip in for people looking for guidance on specific requirements</li>
+<li>Provides <strong>actionable steps</strong> which guide modellers to create a model which meets all the reproducibility and RAP requirements.</li>
+<li>Allows people to easily choose particular pages of interest (e.g.&nbsp;already have a model, but want to find out more about citation).</li>
 </ul>
+</section>
+<section id="section" class="slide level2" data-fullscreen="true">
+<h2></h2>
+<iframe class="stretch" data-src="https://pythonhealthdatascience.github.io/des_rap_book/">
+</iframe>
+</section>
+<section id="looking-forwards" class="slide level2">
+<h2>Looking forwards</h2>
+<p><br></p>
+<p><strong>Review:</strong> At a good stage for review of some of these materials.</p>
+<ul>
+<li>Tom has reviewed the M/M/s models.</li>
+<li>Alison - review of R (mentioning before - timing better now?)</li>
+<li>Nav - review of book, if happy to?</li>
+<li>Andy &amp; Chris - at a later stage?</li>
+</ul>
+<p><br></p>
+<p><strong>Plan:</strong> Continuing to work on these materials. Will describe in a publication.</p>
+<p><br></p>
 
 </section></section>
     </div>
@@ -244,6 +269,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
   <script src="index2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="index2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="index2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index2_files/libs/revealjs/plugin/reveal-fullscreen/fullscreen.js"></script>
   <script src="index2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -258,7 +284,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': true,
+'controlsAuto': false,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -269,14 +295,14 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
         controlsTutorial: false,
 
         // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
+        controlsLayout: 'bottom-right',
 
         // Visibility rule for backwards navigation arrows; "faded", "hidden"
         // or "visible"
@@ -357,7 +383,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
         autoPlayMedia: null,
 
         // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
+        preloadIframes: true,
 
         // Number of milliseconds between automatically proceeding to the
         // next slide, disabled when set to 0, this value can be overwritten
@@ -436,7 +462,7 @@ Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORC
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealFullscreen, QuartoSupport,
 
           RevealMath,
           RevealNotes,
