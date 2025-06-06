@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs:
-    theme: ["styles2.scss"]
+    theme: ["styles.scss"]
     footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
     height: 800
     width: 1250
