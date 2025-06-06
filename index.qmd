@@ -1,0 +1,60 @@
+---
+format: 
+  revealjs:
+    theme: ["styles.scss"]
+    footer: "<https://github.com/pythonhealthdatascience/stars_wp4_presentation>"
+    preview-links: true
+    height: 800
+    width: 1250
+    preload-iframes: true
+    controls: true
+    controls-layout: bottom-right
+---
+
+# Update on WP4: Training materials
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="75%"}
+<br>
+<h3>Amy Heather <a href="https://orcid.org/0000-0002-6596-3479" aria-label="View ORCID record"><img src="images/orcid.png" alt="ORCID iD" style="width:32px; margin-left:15px; margin-right:6px; vertical-align:middle;"></a>0000-0002-6596-3479</h3>
+<br>
+<br>
+Part of the "STARS" project:
+:::
+
+::: {.column width="25%"}
+![](images/exeter.png)
+:::
+
+::::
+
+![](images/stars_banner.png)
+
+## Stages for developing the training materials {auto-animate=true}
+
+:::: {.r-vstack}
+::: {.stage-box .green}
+Gather evidence on requirements for reproducible DES
+:::
+
+::: {.stage-box .orange}
+From theory to practice: build working examples
+:::
+
+::: {.stage-box .purple}
+Testing with a real-world stroke model
+:::
+
+::: {.stage-box .red}
+Knowledge mobilisation: online book
+:::
+::::
+
+## {auto-animate=true}
+
+def
+
+abc
